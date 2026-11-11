@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp": "2026-11-10T16:07:16.884148",
+    "session_id": "test_user_001",
+    "user_message": "привет",
+    "intent": "greet",
+    "is_success": true,
+    "response_text": "Здравствуйте! Я чат-бот школы «Удачный старт». Я могу рассказать о курсах, показать расписание или записать вас на занятие. Чем помочь?",
+    "confidence_score": 0.99,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:07:39.664527",
+    "session_id": "test_user_001",
+    "user_message": "какие курсы у вас есть",
+    "intent": "ask_courses",
+    "is_success": true,
+    "response_text": "Школа «Удачный старт» готовит к ЕГЭ и ОГЭ на максимальные баллы!\nМы предлагаем курсы по трем направлениям:\n📜 История\n📐 Математика\n📚 Русский язык\nНапишите «Записаться на [предмет]», чтобы начать.",
+    "confidence_score": 0.95,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:07:51.525373",
+    "session_id": "test_user_001",
+    "user_message": "когда математика",
+    "intent": "ask_schedule",
+    "is_success": true,
+    "response_text": "📅 Математика проходит по понедельник и суббота в 17:00.",
+    "confidence_score": 0.9,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:08:07.904304",
+    "session_id": "test_user_001",
+    "user_message": "запиши меня на историю",
+    "intent": "register_course",
+    "is_success": true,
+    "response_text": "Отлично! Вам удобнее заниматься в вторник или пятница в 16:00?",
+    "confidence_score": 0.95,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:08:13.144006",
+    "session_id": "test_user_001",
+    "user_message": "в пятницу",
+    "intent": "invalid_time_slot",
+    "is_success": false,
+    "response_text": "Пожалуйста, выберите один из доступных дней: вторник или пятница.",
+    "confidence_score": 0.0,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:08:17.503648",
+    "session_id": "test_user_001",
+    "user_message": "пятница",
+    "intent": "provide_time_slot",
+    "is_success": true,
+    "response_text": "Отличный выбор! Как к вам можно обращаться? (Введите ваше имя)",
+    "confidence_score": 0.95,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:08:22.070123",
+    "session_id": "test_user_001",
+    "user_message": "Екатерина",
+    "intent": "provide_name",
+    "is_success": true,
+    "response_text": "Приятно познакомиться, Екатерина! Укажите ваш номер телефона (например, +79991234567).",
+    "confidence_score": 0.95,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:08:28.873002",
+    "session_id": "test_user_001",
+    "user_message": "88005553535",
+    "intent": "registration_complete",
+    "is_success": true,
+    "response_text": "✅ Спасибо, Екатерина! Вы успешно записаны на курс «История» на пятница в 16:00.\nВаш номер 88005553535 сохранён.",
+    "confidence_score": 1.0,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:08:42.211049",
+    "session_id": "test_user_001",
+    "user_message": "спасибо",
+    "intent": "thank_you",
+    "is_success": true,
+    "response_text": "Рад был помочь!",
+    "confidence_score": 0.99,
+    "response_time_ms": 0
+  },
+  {
+    "timestamp": "2026-11-10T16:08:44.342010",
+    "session_id": "test_user_001",
+    "user_message": "пока",
+    "intent": "goodbye",
+    "is_success": true,
+    "response_text": "До свидания! Желаем удачного старта на экзаменах!",
+    "confidence_score": 0.99,
+    "response_time_ms": 0
+  }
+]
